@@ -34,6 +34,8 @@
     .green_container > p {
         font-weight: bold;
         text-align: center;
+        padding-right: 4rem;
+        padding-left: 4rem;
     }
     .logo {
         width: 300px;
@@ -45,13 +47,44 @@
 </style>
 
 <div>
-    <h2>O značce Malibu C</h2>
-    <img src="Obrázky/Malibu_01.png" alt="Malibu C obrázek">
-    <div class="about_object">
+    <div class="black_object">
+        <h3>O značce Malibu C</h3>
+    </div>
+    <img class="main_img" src="Obrázky/Malibu_01.png" alt="Malibu C obrázek">
+    <div class="light_object">
         <h2>O značce Malibu</h2>
     </div>
     <p>Malibu C v roce 1985 jako první přišli na trh s wellness přípravky, které jsou založeny na patentovaných technologiích, vědeckých výzkumech s ohledem na životní prostředí. Naše produkty jsou 100% vegan, netestované na zvířatech, neobsahují parabeny, sulfáty, konzervanty, umělé parfemace a polmáhají účinně řešit problémy s vlasy a pokožkou. Klíčová řada Malibu C Wellness Haircare Remedies (Wellness sáčky) je patentované ošetření vlasů a pokožky hlavy na bázi aktivovaných krystalů VITAMÍNU C, a to b té nejčistší a nejúčinější podobě.</p>
 </div>
+
+<style>
+    .black_object {
+        background-color: #111;
+        width: 300px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 2rem auto 2rem auto;
+        clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+    }
+    .black_object > h3 {
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .light_object {
+        width: 458px;
+        height: 348px;
+        background: whitesmoke;
+        opacity: 90%;
+        border-radius:29% 71% 72% 28% / 35% 20% 88% 65%;
+
+    }
+    .light_object > h2 {
+        padding: 9rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+</style>
     
 </body>
 </html>
