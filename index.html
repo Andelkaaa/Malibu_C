@@ -8,19 +8,92 @@
 <body>
 
 
-<div class="widgets_up">
+<div class="slider">
+    <div class="slide">
+        <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
+            <img src="Obrázky/K18_widget.png" alt="k18 leave in mask" /></a>
+            <p style="text-align: center; padding-top: 1rem;"> 
+            <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
+                K18 HAIR<br>
+                Molecular Repair Leave-in Mask<br>
+                1890 Kč
+            </a></p>
+        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
+    </div>
+
+    <div class="slide">
+        <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
+            <img src="Obrázky/malibu_widget.png" alt="malibu c color shampoo" /></a>
+            <p style="text-align: center; padding-top: 1rem;"> 
+            <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
+                MALIBU C<br>
+                Hydrate Color Wellness® Shampoo<br>
+                370 Kč
+            </a></p>
+        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
+    </div>
+
+    <div class="slide">
+        <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
+            <img src="Obrázky/alterna_widget.png" alt="alterna clinical densifying shampoo" /></a>
+            <p style="text-align: center; padding-top: 1rem;"> 
+            <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
+                ALTERNA HAIRCARE<br>
+                Clinical Densifying Shampoo<br>
+                1090 Kč
+            </a></p>
+        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
+    </div>
+
+    <div class="slide">
+        <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
+            <img src="Obrázky/zenz_widget.png" alt="zenz shampoo rhassoul" /></a>
+            <p style="text-align: center; padding-top: 1rem;"> 
+            <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
+                ZENZ ORGANIC<br>
+                Shampoo Rhassoul no. 16<br>
+                990 Kč
+            </a></p>
+        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
+    </div>
 </div>
 
+<style>
+    .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        padding: 2rem;
+        background-color: #FCFCFC;
+    }
 
-<header>
+    .slider {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 12px;
+    }
+</style>
+
+<div>
     <h1>Malibu C</h1>
     <div class="green_container">
         <img class="logo" src="Obrázky/Malibu_logo.png" alt="Logo Malibu C">
         <p>Několikrát týdně si myjeme vlasy vodou s představou, že spolu s šamponem z našich vlasů smyje všechny nečistoty. Napadlo vás ale někdy, že voda zároveň ve vlasech spoustu látek zanechá? Obsahuje totiž velké množství nejrůznějších minerálů, které se v pramíncích usazují a postupně vytvářejí větší a větší nánosy. A vaše vlasy jsou stále matnější a matnější. Péče od Malibu C ale přišla s řešením!</p>
     </div>
-</header>
+</div>
 <style>
     h1 {
+        padding-top: 7rem;
         text-transform: uppercase;
         font-weight: bold;
         text-align: center;
@@ -54,7 +127,33 @@
     <div class="light_object">
         <h2>O značce Malibu</h2>
     </div>
-    <p>Malibu C v roce 1985 jako první přišli na trh s wellness přípravky, které jsou založeny na patentovaných technologiích, vědeckých výzkumech s ohledem na životní prostředí. Naše produkty jsou 100% vegan, netestované na zvířatech, neobsahují parabeny, sulfáty, konzervanty, umělé parfemace a polmáhají účinně řešit problémy s vlasy a pokožkou. Klíčová řada Malibu C Wellness Haircare Remedies (Wellness sáčky) je patentované ošetření vlasů a pokožky hlavy na bázi aktivovaných krystalů VITAMÍNU C, a to b té nejčistší a nejúčinější podobě.</p>
+
+    <h3>Péče pro všechny, kdo si myjí vlasy vodou</h3>
+   
+    <p>Místo, kde je vše zářivé, neodolatelné a dokonalé – Malibu. Právě tam sahají kořeny značky, která se rozhodla dělat věci tak trochu po svém. Její zakladatelé, Tom a Deb         Porterovi, si problematiky spojené s vodou všimli a vytvořili řešení v podobě péče, jež díky speciálním složkám dokáže nahromaděné prvky z vlasů odbourávat. Důraz kladou na to, aby vše bylo založené na vědeckých výzkumech, nikoliv marketingové vlně. A ještě jedna věc je u Malibu C speciální. Propojuje svět krásy a wellness, takže používání produktů této značky není jen rutinou, ale skutečným zážitkem. </p>
+    
+    <h3>Voda a věda</h3>
+    
+    <p>Příliš rychlé blednutí barvy, nazelenalý nebo zašedlý blond odstín, chybějící lesk, suchost nebo špatné krytí šedin. To je jen zlomek problémů, za kterými mohou stát minerály a chemické složky obsažené ve vodě. Některé se v ní vyskytují přirozeně, jiné do vody přidáváme my sami, abychom ji udrželi čistou. Jak si celý proces usazování těchto látek představit? Vlasy si obvykle myjeme v teplé vodě. Ta otevírá kutikuly vlasů a minerály se tak jednoduše dostávají dovnitř. A výsledek se nám zrovna nezamlouvá. Co který minerál může napáchat?
+    Nahromaděný vápník má často na svědomí zplihlost a suchost vlasů. Pokud se navíc usadí na pokožce hlavy, může ucpávat vlasový folikul a bránit tak v růstu novým vlasům nebo způsobovat jejich lámání. A vápníkové soli pak jsou běžným viníkem vzniku lupů.
+            
+    •  Měď
+    Z nazelenalého odstínu světlých vlasů je často obviňován chlor, ale „zařídit” jej umí i měď. V důsledku tohoto minerálu také tmavé vlasy vypadají ještě tmavší a způsobuje i problémy při barvení nebo trvalé.
+            
+    • Železo
+    A barvu vlasů ovlivňuje také železo. Světlé vlasy barví do oranžova, tmavé zase do červena a jejich odstín ve výsledku působí ještě tmavším dojmem. Zároveň způsobuje suchost a negativně ovlivňuje výsledek chemických ošetření.
+            
+    • Hořčík
+    Podobně jako vápník se i hořčík rád váže na vlasy a způsobuje jejich suchost a zatížení.
+            
+    • Oxid křemičitý
+    Suchost, lupy, zatížení nebo vypadávání vlasů – to jsou potíže, které může ve vlasech způsobovat svým usazováním oxid křemičitý.
+    Kouzelné krystalky: svatý grál Malibu C
+    Je jasné, že tyto nezvané návštěvníky ve vlasech nechcete. A pokud toužíte po zářivých a lesklých vlasech, je třeba se nánosů minerálů zbavit. Postará se o to péče Malibu C. K bestsellerům značky patří sáčky s krystalky Wellness Remedies. Obsahují kyselinu askorbovou, tedy vitamín C v jeho nejčistší podobě. Forma krystalů zaručuje tu nejvyšší účinnost a k jejich aktivaci nepotřebujete nic než vodu. Vybírat můžete z mnoha variant ošetření, podle typu vlasů nebo životního stylu. A vše nejlépe podpořte šamponem a kondicionérem nebo další doplňkovou péčí.</p>
+
+    <h3>S láskou k planetě</h3>
+    
+    <p>Zaznělo toho tolik o minerálech a chemických látkách, že můžete mít pocit, že přípravky Malibu C nejsou zrovna přírodního původu. Ale opak je pravdou. Produkty jsou 100% veganské, cruelty-free, bez lepku, sulfátů, parabenů či konzervačních látek a stvořené z ingrediencí rostlinného původu. A vážně bere značka i závazek vůči planetě. Používá pouze recyklovatelné PET obaly a produkty vyvíjí s maximální šetrností k přírodě. Sama totiž ví, že čím méně vody, energie a přírodních zdrojů využíváme, tím lépe. </p>
 </div>
 
 <style>
