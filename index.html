@@ -3,82 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Document</title>
 </head>
 <body>
 
-
-<div class="slider">
-    <div class="slide slide-k18">
-        <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
-            <img src="Obrázky/K18_widget.png" alt="k18 leave in mask" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
-                K18 HAIR<br>
-                Molecular Repair Leave-in Mask<br>
-                1890 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide slide-malibu">
-        <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
-            <img src="Obrázky/malibu_widget.png" alt="malibu c color shampoo" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
-                MALIBU C<br>
-                Hydrate Color Wellness® Shampoo<br>
-                370 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide slide-alterna">
-        <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
-            <img src="Obrázky/alterna_widget.png" alt="alterna clinical densifying shampoo" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
-                ALTERNA HAIRCARE<br>
-                Clinical Densifying Shampoo<br>
-                1090 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide slide-zenz">
-        <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
-            <img src="Obrázky/zenz_widget.png" alt="zenz shampoo rhassoul" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
-                ZENZ ORGANIC<br>
-                Shampoo Rhassoul no. 16<br>
-                990 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-</div>
-
-<style>
-    .slide {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-    }
-
-    .slider {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    a {
-        text-decoration: none;
-        font-size: 11px;
-    }
-</style>
 
 <div>
     <h1>Malibu C</h1>
@@ -88,31 +17,6 @@
     </div>
 </div>
 
-<style>
-    h1 {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-align: center;
-    }
-    .green_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #3fc1c0;
-        padding: 6rem;
-
-    }
-    .green_container > p {
-        font-weight: bold;
-        text-align: center;
-        padding-right: 6rem;
-        padding-left: 6rem;
-        padding-bottom: 2rem;
-    }
-</style>
-
 <div>
     <div class="black_object">
         <h3>O značce Malibu C</h3>
@@ -120,7 +24,8 @@
     <img class="main_img" src="Obrázky/Malibu_01.png" alt="Malibu C obrázek">
     <div class="flex_container">
         <div class="light_object">
-            <h3>O značce Malibu</h3>
+            <img src="Obrázky/Vector.png" alt="vektor">
+            <div class="centered-txt">O značce Malibu</div>
         </div>
         <div class="about_text">
             <h3>Péče pro všechny, kdo si myjí vlasy vodou</h3>
@@ -155,13 +60,120 @@
     </div>
 </div>
 
+
+<div class="news-btn" >
+    <a href="https://www.salononline.cz/novinky/">Zobrazit novinky
+    </a>
+</div>
+
+
+<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+    <div class="carousel-cell">
+        <div class="slide">
+            <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
+                <img src="Obrázky/K18_widget.png" alt="k18 leave in mask" /></a>
+                <p style="text-align: center; padding-top: 1rem;">
+                <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
+                    K18 HAIR<br>
+                    Molecular Repair Leave-in Mask
+                </a></p>
+            <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">1 890 Kč</button>
+        </div>
+    </div>
+
+    <div class="carousel-cell">
+        <div class="slide">
+            <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
+                <img src="Obrázky/malibu_widget.png" alt="malibu c color shampoo" /></a>
+                <p style="text-align: center; padding-top: 1rem;">
+                <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
+                    MALIBU C<br>
+                    Hydrate Color Wellness® Shampoo <br>
+                </a></p>
+            <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">370 Kč</button>
+        </div>
+    </div>
+
+    <div class="carousel-cell">
+        <div class="slide">
+            <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
+                <img src="Obrázky/alterna_widget.png" alt="alterna clinical densifying shampoo" /></a>
+                <p style="text-align: center; padding-top: 1rem;">
+                <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
+                    ALTERNA HAIRCARE<br>
+                    Clinical Densifying Shampoo
+                </a></p>
+            <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">1 090 Kč</button>
+        </div>
+    </div>
+
+    <div class="carousel-cell">
+        <div class="slide">
+            <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
+                <img src="Obrázky/zenz_widget.png" alt="zenz shampoo rhassoul" /></a>
+                <p style="text-align: center; padding-top: 1rem;">
+                <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
+                    ZENZ ORGANIC<br>
+                    Shampoo Rhassoul no. 16
+                </a></p>
+            <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">990 Kč</button>
+        </div>
+    </div>
+</div>
+
+
+
 <style>
+    .slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .carousel-cell {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    h1 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .green_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3fc1c0;
+        padding: 6rem;
+    }
+
+    .green_container > p {
+        font-weight: bold;
+        text-align: center;
+        padding-right: 6rem;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
+    }
+
     .black_object {
-    background-color: #111;
-    width: 300px;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    margin: 4rem auto 4rem auto;
-    clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
+        background-color: #111;
+        width: 300px;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        margin: 4rem auto 4rem auto;
+        clip-path: polygon(15% 0%, 85% 0%, 100% 50%, 85% 100%, 15% 100%, 0% 50%);
     }
 
     .black_object > h3 {
@@ -176,100 +188,53 @@
     }
 
     .light_object {
-        width: 400px;
-        height: 300px;
-        background: whitesmoke;
-        opacity: 90%;
-        border-radius:86% 14% 69% 31% / 30% 8% 92% 70%;
-        padding: 6rem 16rem 0 16rem;
         position: relative;
-        top: -50px;
+        text-align: center;
+        width:150%;
+        top: -40px;
         left: -20px;
+        opacity: 0.8;
     }
 
-    .light_object > h3 {
+    .centered-txt {
         text-transform: uppercase;
-        font-weight: bold;
-        position: relative;
-        top: -30px;
-        left: -20px;
+        font-weight:bolder;
+        position: absolute;
+        top:9%;
+        left: 15%;
+        font-size: 30px;
     }
 
     .about_text {
         padding-left: 4rem;
         padding-top: 2rem;
     }
-</style>
 
-<div class="slider">
-    <div class="slide">
-        <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
-            <img src="Obrázky/K18_widget.png" alt="k18 leave in mask" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/k18-hair-molecular-repair-leave-in-mask/">
-                K18 HAIR<br>
-                Molecular Repair Leave-in Mask<br>
-                1890 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide">
-        <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
-            <img src="Obrázky/malibu_widget.png" alt="malibu c color shampoo" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/malibu-c-color-hydrate-shampoo/">
-                MALIBU C<br>
-                Hydrate Color Wellness® Shampoo<br>
-                370 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide">
-        <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
-            <img src="Obrázky/alterna_widget.png" alt="alterna clinical densifying shampoo" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/caviar-clinical-densifying-shampoo--250-ml-2/">
-                ALTERNA HAIRCARE<br>
-                Clinical Densifying Shampoo<br>
-                1090 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-
-    <div class="slide">
-        <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
-            <img src="Obrázky/zenz_widget.png" alt="zenz shampoo rhassoul" /></a>
-            <p style="text-align: center; padding-top: 1rem;"> 
-            <a href="https://www.salononline.cz/zenz-treatment-shampoo-rhassoul-no-16--50-ml/">
-                ZENZ ORGANIC<br>
-                Shampoo Rhassoul no. 16<br>
-                990 Kč
-            </a></p>
-        <button class="btn btn-primary" onclick="addToCartFromMagazine('K18-31007')">Do košíku</button>
-    </div>
-</div>
-
-<div class="news-btn" >
-    <a href="https://www.salononline.cz/novinky/">Zobrazit novinky
-    </a>
-</div>
-<style>
     .news-btn {
         background-color: #111;
-        width: 200px;
-        padding: 1.2rem 2rem 1.2rem 2rem;
-        margin: 4rem auto 4rem auto;
+        width: 250px;
+        padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+        margin: 2rem auto 2rem auto;
         text-align: center;
+        transition-duration: 0.4s;
+    }
+    .news-btn:hover {
+        background-color: #aa8232;
+        color: white;
     }
     .news-btn > a {
         text-decoration: none;
         color: #fff;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .button {
+        transition-duration: 0.4s;
     }
 </style>
+
 
 <style>
         @media only screen and (max-width: 500px) {
@@ -282,7 +247,6 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         h1 {
             font-size: 4rem;
         }
@@ -304,25 +268,15 @@
         padding: 0.3rem 0.7rem 0.3rem 0.7rem;
         }
         .black_object > h3 {
-        font-size: 14px;
-        }
-        .light_object {
-        width: 200px;
-        height: 150px;
-        padding: 1rem 2rem 0 2rem;
-        position: relative;
-        top: -30px;
-        left: -15px;
+        font-size: 20px;
         }
         .flex_container {
         flex-direction: column;
         }
-        .light_object > h3 {
-        padding: 1rem 2rem 1rem 2rem;
-        position: relative;
-        top: 15px;
-        left: -15px;
-        }
+        .centered-txt {
+        font-size: 20px;
+    }
+
         .about_text {
         margin: 0;
         padding: 1rem;
@@ -369,6 +323,16 @@
 </style>
     
 
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>function addToCartFromMagazine(sku) { shoptet.cartShared.addToCart({ productCode: sku, amount: 1 }); }</script>
 
 </body>
